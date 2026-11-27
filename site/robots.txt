@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://ovaldino05.github.io/QuantumImpactTech/sitemap.xml

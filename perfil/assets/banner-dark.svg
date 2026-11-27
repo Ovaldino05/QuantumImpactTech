@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320" role="img" aria-labelledby="title desc">
+  <title id="title">Ovaldino Palacio — QuantumImpactTech</title>
+  <desc id="desc">Open infrastructure for AI developers. Fintech, developer tooling and security. Built in Panama, made for the world.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#07080C"/><stop offset="1" stop-color="#11131C"/></linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#3B82F6"/><stop offset="1" stop-color="#8B5CF6"/></linearGradient>
+    <radialGradient id="glowB"><stop offset="0" stop-color="#3B82F6" stop-opacity=".45"/><stop offset="1" stop-color="#3B82F6" stop-opacity="0"/></radialGradient>
+    <radialGradient id="glowV"><stop offset="0" stop-color="#8B5CF6" stop-opacity=".40"/><stop offset="1" stop-color="#8B5CF6" stop-opacity="0"/></radialGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#FFFFFF" stroke-opacity=".035"/></pattern>
+    <clipPath id="frame"><rect width="1200" height="320" rx="20"/></clipPath>
+  </defs>
+  <g clip-path="url(#frame)">
+    <rect width="1200" height="320" fill="url(#bg)"/>
+    <rect width="1200" height="320" fill="url(#grid)"/>
+    <circle cx="980" cy="120" r="260" fill="url(#glowV)"><animate attributeName="r" values="240;280;240" dur="9s" repeatCount="indefinite"/></circle>
+    <circle cx="760" cy="300" r="220" fill="url(#glowB)"><animate attributeName="r" values="230;190;230" dur="11s" repeatCount="indefinite"/></circle>
+    <line x1="820" y1="70" x2="905" y2="120" stroke="#FFFFFF" stroke-opacity=".10" stroke-width="1.2"/>
+    <line x1="905" y1="120" x2="990" y2="75" stroke="#FFFFFF" stroke-opacity=".10" stroke-width="1.2"/>
+    <line x1="990" y1="75" x2="1070" y2="140" stroke="#FFFFFF" stroke-opacity=".10" stroke-width="1.2"/>
+    <line x1="905" y1="120" x2="960" y2="200" stroke="#FFFFFF" stroke-opacity=".10" stroke-width="1.2"/>
+    <line x1="960" y1="200" x2="870" y2="250" stroke="#FFFFFF" stroke-opacity=".10" stroke-width="1.2"/>
+    <line x1="960" y1="200" x2="1050" y2="260" stroke="#FFFFFF" stroke-opacity=".10" stroke-width="1.2"/>
+    <line x1="1070" y1="140" x2="1130" y2="210" stroke="#FFFFFF" stroke-opacity=".10" stroke-width="1.2"/>
+    <line x1="1050" y1="260" x2="1130" y2="210" stroke="#FFFFFF" stroke-opacity=".10" stroke-width="1.2"/>
+    <line x1="820" y1="70" x2="780" y2="180" stroke="#FFFFFF" stroke-opacity=".10" stroke-width="1.2"/>
+    <line x1="780" y1="180" x2="870" y2="250" stroke="#FFFFFF" stroke-opacity=".10" stroke-width="1.2"/>
+    <line x1="1070" y1="140" x2="960" y2="200" stroke="#FFFFFF" stroke-opacity=".10" stroke-width="1.2"/>
+    <circle cx="820" cy="70" r="3" fill="url(#accent)">
+      <animate attributeName="opacity" values=".35;1;.35" dur="3s" begin="0.0s" repeatCount="indefinite"/></circle>
+    <circle cx="905" cy="120" r="4" fill="url(#accent)">
+      <animate attributeName="opacity" values=".35;1;.35" dur="4s" begin="0.4s" repeatCount="indefinite"/></circle>
+    <circle cx="990" cy="75" r="3" fill="url(#accent)">
+      <animate attributeName="opacity" values=".35;1;.35" dur="5s" begin="0.8s" repeatCount="indefinite"/></circle>
+    <circle cx="1070" cy="140" r="4" fill="url(#accent)">
+      <animate attributeName="opacity" values=".35;1;.35" dur="3s" begin="1.2000000000000002s" repeatCount="indefinite"/></circle>
+    <circle cx="960" cy="200" r="3" fill="url(#accent)">
+      <animate attributeName="opacity" values=".35;1;.35" dur="4s" begin="1.6s" repeatCount="indefinite"/></circle>
+    <circle cx="870" cy="250" r="4" fill="url(#accent)">
+      <animate attributeName="opacity" values=".35;1;.35" dur="5s" begin="2.0s" repeatCount="indefinite"/></circle>
+    <circle cx="1050" cy="260" r="3" fill="url(#accent)">
+      <animate attributeName="opacity" values=".35;1;.35" dur="3s" begin="2.4000000000000004s" repeatCount="indefinite"/></circle>
+    <circle cx="1130" cy="210" r="4" fill="url(#accent)">
+      <animate attributeName="opacity" values=".35;1;.35" dur="4s" begin="2.8000000000000003s" repeatCount="indefinite"/></circle>
+    <circle cx="780" cy="180" r="3" fill="url(#accent)">
+      <animate attributeName="opacity" values=".35;1;.35" dur="5s" begin="3.2s" repeatCount="indefinite"/></circle>
+    <circle r="3.5" fill="#FFFFFF">
+      <animateMotion dur="7s" repeatCount="indefinite" path="M820,70 L905,120 L960,200 L1050,260 L1130,210 L1070,140 L990,75"/>
+      <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.1;.9;1" dur="7s" repeatCount="indefinite"/></circle>
+    <rect x="0" y="0" width="1200" height="2" fill="url(#accent)" opacity=".9"/>
+    <rect x="0" y="-60" width="1200" height="60" fill="#FFFFFF" opacity=".025">
+      <animate attributeName="y" values="-60;320" dur="8s" repeatCount="indefinite"/></rect>
+  </g>
+  <text x="64" y="84" font-family="'Cascadia Code', 'JetBrains Mono', 'SFMono-Regular', Consolas, monospace" font-size="14" letter-spacing="3" fill="#9AA3B2">QUANTUMIMPACTTECH  ·  OPEN SOURCE INITIATIVE</text>
+  <text x="62" y="160" font-family="'Segoe UI', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="64" font-weight="700" letter-spacing="-1.5" fill="#FFFFFF">Ovaldino Palacio</text>
+  <rect x="64" y="182" width="72" height="4" rx="2" fill="url(#accent)"/>
+  
+    <clipPath id="clip0"><rect x="64" y="206" height="36" width="519">
+      <animate attributeName="width" values="0;0;519;519;0;0" keyTimes="0;0.0;0.1;0.2833;0.3167;1" dur="12.0s" repeatCount="indefinite"/>
+    </rect></clipPath>
+    <g opacity="1">
+      <animate attributeName="opacity" values="1;0;0" keyTimes="0;0.3167;1" dur="12.0s" calcMode="discrete" repeatCount="indefinite"/>
+      <text x="64" y="232" clip-path="url(#clip0)" font-family="'Cascadia Code', 'JetBrains Mono', 'SFMono-Regular', Consolas, monospace" font-size="24" fill="url(#accent)"
+            textLength="511" lengthAdjust="spacingAndGlyphs">Open infrastructure for AI developers</text>
+      <rect y="210" width="3" height="28" fill="#FFFFFF" x="581">
+        <animate attributeName="x" values="64;64;581;581;64;64" keyTimes="0;0.0;0.1;0.2833;0.3167;1" dur="12.0s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
+      </rect>
+    </g>
+    <clipPath id="clip1"><rect x="64" y="206" height="36" width="0">
+      <animate attributeName="width" values="0;0;588;588;0;0" keyTimes="0;0.3333;0.4333;0.6167;0.65;1" dur="12.0s" repeatCount="indefinite"/>
+    </rect></clipPath>
+    <g opacity="0">
+      <animate attributeName="opacity" values="0;1;0;0" keyTimes="0;0.3333;0.65;1" dur="12.0s" calcMode="discrete" repeatCount="indefinite"/>
+      <text x="64" y="232" clip-path="url(#clip1)" font-family="'Cascadia Code', 'JetBrains Mono', 'SFMono-Regular', Consolas, monospace" font-size="24" fill="url(#accent)"
+            textLength="580" lengthAdjust="spacingAndGlyphs">Fintech  ·  Developer tooling  ·  Security</text>
+      <rect y="210" width="3" height="28" fill="#FFFFFF" x="64">
+        <animate attributeName="x" values="64;64;650;650;64;64" keyTimes="0;0.3333;0.4333;0.6167;0.65;1" dur="12.0s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
+      </rect>
+    </g>
+    <clipPath id="clip2"><rect x="64" y="206" height="36" width="0">
+      <animate attributeName="width" values="0;0;505;505;0;0" keyTimes="0;0.6667;0.7667;0.95;0.9833;1" dur="12.0s" repeatCount="indefinite"/>
+    </rect></clipPath>
+    <g opacity="0">
+      <animate attributeName="opacity" values="0;1;0;0" keyTimes="0;0.6667;0.9833;1" dur="12.0s" calcMode="discrete" repeatCount="indefinite"/>
+      <text x="64" y="232" clip-path="url(#clip2)" font-family="'Cascadia Code', 'JetBrains Mono', 'SFMono-Regular', Consolas, monospace" font-size="24" fill="url(#accent)"
+            textLength="497" lengthAdjust="spacingAndGlyphs">Built in Panama. Made for the world.</text>
+      <rect y="210" width="3" height="28" fill="#FFFFFF" x="64">
+        <animate attributeName="x" values="64;64;567;567;64;64" keyTimes="0;0.6667;0.7667;0.95;0.9833;1" dur="12.0s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
+      </rect>
+    </g>
+  <text x="64" y="282" font-family="'Segoe UI', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="16" fill="#9AA3B2">Building open, verifiable infrastructure where AI, software and finance meet.</text>
+</svg>

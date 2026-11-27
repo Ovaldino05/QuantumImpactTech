@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" role="img" aria-labelledby="ct cd">
+  <title id="ct">schema-caniuse</title>
+  <desc id="cd">Can I use this JSON Schema with OpenAI, Claude or Gemini? A sourced compatibility database and checker.</desc>
+  <defs>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#3B82F6"/><stop offset="1" stop-color="#8B5CF6"/></linearGradient>
+    <radialGradient id="glow"><stop offset="0" stop-color="#8B5CF6" stop-opacity=".22"/><stop offset="1" stop-color="#8B5CF6" stop-opacity="0"/></radialGradient>
+    <clipPath id="f"><rect width="1200" height="300" rx="20"/></clipPath>
+  </defs>
+  <g clip-path="url(#f)">
+    <rect width="1200" height="300" fill="#0F1118"/>
+    <circle cx="1040" cy="150" r="260" fill="url(#glow)"/>
+    <rect x=".5" y=".5" width="1199" height="299" rx="20" fill="none" stroke="#232634"/>
+  </g>
+  <text x="64" y="70" font-family="'Cascadia Code', 'JetBrains Mono', 'SFMono-Regular', Consolas, monospace" font-size="13" letter-spacing="3" fill="#9AA3B2">FLAGSHIP PROJECT  ·  v0.1.0  ·  MIT</text>
+  <text x="62" y="122" font-family="'Segoe UI', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="44" font-weight="700" fill="#FFFFFF">schema-caniuse</text>
+  <text x="64" y="164" font-family="'Segoe UI', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="19" fill="#9AA3B2">Can I use this JSON Schema with OpenAI, Claude or Gemini?</text>
+  <text x="64" y="192" font-family="'Segoe UI', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="15" fill="#9AA3B2">Sourced, versioned compatibility data + a zero-dependency checker and CLI.</text>
+  <g transform="translate(64,214)"><rect width="180" height="40" rx="20" fill="none" stroke="#232634"/><circle cx="22" cy="20" r="5" fill="url(#accent)"/><text x="36" y="25" font-family="'Segoe UI', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="14" fill="#FFFFFF">OpenAI</text><text x="94" y="25" font-family="'Segoe UI', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="14" fill="#9AA3B2">strict</text></g><g transform="translate(260,214)"><rect width="180" height="40" rx="20" fill="none" stroke="#232634"/><circle cx="22" cy="20" r="5" fill="url(#accent)"/><text x="36" y="25" font-family="'Segoe UI', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="14" fill="#FFFFFF">Claude</text><text x="94" y="25" font-family="'Segoe UI', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="14" fill="#9AA3B2">strict tools</text></g><g transform="translate(456,214)"><rect width="180" height="40" rx="20" fill="none" stroke="#232634"/><circle cx="22" cy="20" r="5" fill="url(#accent)"/><text x="36" y="25" font-family="'Segoe UI', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="14" fill="#FFFFFF">Gemini</text><text x="94" y="25" font-family="'Segoe UI', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="14" fill="#9AA3B2">structured</text></g>
+  <g transform="translate(860,40)">
+    <rect width="276" height="220" rx="16" fill="#07080C" stroke="#232634"/>
+    <circle cx="22" cy="22" r="5" fill="#EF4444" opacity=".8"/><circle cx="40" cy="22" r="5" fill="#F59E0B" opacity=".8"/><circle cx="58" cy="22" r="5" fill="#22C55E" opacity=".8"/>
+    <text font-family="'Cascadia Code', 'JetBrains Mono', 'SFMono-Regular', Consolas, monospace" font-size="13" fill="#FFFFFF">
+      <tspan x="20" y="62" fill="#9AA3B2">$ npx schema-caniuse s.json</tspan>
+      <tspan x="20" y="94" fill="#F87171">✖ openai-strict</tspan>
+      <tspan x="34" y="116" fill="#9AA3B2">/properties/x/allOf</tspan>
+      <tspan x="20" y="146" fill="#FBBF24">⚠ gemini</tspan>
+      <tspan x="34" y="168" fill="#9AA3B2">minLength ignored</tspan>
+      <tspan x="20" y="198" fill="#34D399">✔ anthropic-strict</tspan>
+    </text>
+  </g>
+</svg>

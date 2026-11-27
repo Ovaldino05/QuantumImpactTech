@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ovaldino Palacio · QuantumImpactTech — Open infrastructure for AI developers</title>
+  <meta name="description" content="Ovaldino Palacio builds open-source infrastructure for AI developers. Flagship: schema-caniuse, a sourced compatibility database and checker for JSON Schema across OpenAI, Claude and Gemini.">
+  <link rel="canonical" href="https://ovaldino05.github.io/QuantumImpactTech/">
+  <link rel="alternate" hreflang="en" href="https://ovaldino05.github.io/QuantumImpactTech/">
+  <link rel="alternate" hreflang="es" href="https://ovaldino05.github.io/QuantumImpactTech/?lang=es">
+  <link rel="icon" href="brand/qit-logo.svg" type="image/svg+xml">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Ovaldino Palacio · QuantumImpactTech">
+  <meta property="og:description" content="Open infrastructure for AI developers. Flagship: schema-caniuse.">
+  <meta property="og:url" content="https://ovaldino05.github.io/QuantumImpactTech/">
+  <meta property="og:image" content="https://ovaldino05.github.io/QuantumImpactTech/brand/og.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#07080c">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@graph":[
+    {"@type":"Person","name":"Ovaldino Palacio","url":"https://github.com/Ovaldino05",
+     "affiliation":{"@type":"CollegeOrUniversity","name":"Universidad de Panamá"},
+     "knowsAbout":["JSON Schema","Large language models","Developer tooling","Fintech"]},
+    {"@type":"SoftwareSourceCode","name":"schema-caniuse","codeRepository":"https://github.com/Ovaldino05/QuantumImpactTech/tree/main/packages/schema-caniuse","programmingLanguage":"JavaScript","license":"https://opensource.org/licenses/MIT"}
+  ]}
+  </script>
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem('theme');
+        if (!t) t = matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+        document.documentElement.dataset.theme = t;
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+<a class="skip" href="#main" data-i18n="skip">Skip to content</a>
+<header>
+  <div class="wrap bar">
+    <a class="brand" href="#top"><img src="brand/qit-logo.svg" alt="" width="30" height="30">QuantumImpactTech</a>
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="#about" data-i18n="nav.about">About</a></li>
+        <li><a href="#projects" data-i18n="nav.projects">Projects</a></li>
+        <li><a href="#playground" data-i18n="nav.playground">Playground</a></li>
+        <li><a href="#impact" data-i18n="nav.impact">Impact</a></li>
+        <li><a href="#roadmap" data-i18n="nav.roadmap">Roadmap</a></li>
+        <li><a href="#blog" data-i18n="nav.blog">Blog</a></li>
+        <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="tools">
+      <button class="chip-btn" id="lang" type="button" aria-label="Cambiar a español">ES</button>
+      <button class="chip-btn" id="theme" type="button" aria-label="Toggle light/dark theme">◐</button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <div class="hero" id="top">
+    <div class="wrap">
+      <div class="eyebrow" data-i18n="hero.eyebrow">QuantumImpactTech · Open source initiative</div>
+      <h1>Ovaldino <span class="grad">Palacio</span></h1>
+      <p class="typed" id="typed" aria-live="off"></p>
+      <p class="lead" data-i18n="hero.lead">I build open, verifiable infrastructure where AI, software and finance meet — starting with tools that every developer working with LLMs needs and nobody wants to maintain alone.</p>
+      <div class="cta">
+        <a class="btn primary" href="#playground" data-i18n="hero.try">Try schema-caniuse</a>
+        <a class="btn" href="https://github.com/Ovaldino05/QuantumImpactTech" data-i18n="hero.code">View the code</a>
+        <a class="btn" href="https://github.com/Ovaldino05" data-i18n="hero.follow">Follow on GitHub</a>
+      </div>
+    </div>
+  </div>
+
+  <section id="about" class="reveal">
+    <div class="wrap">
+      <div class="eyebrow" data-i18n="about.eyebrow">About</div>
+      <h2 data-i18n="about.title">Student. Builder. Finance meets software.</h2>
+      <div class="grid">
+        <div class="card"><span class="tag" data-i18n="about.edu">Education</span>
+          <h3>Universidad de Panamá</h3>
+          <p data-i18n="about.edu.p">First-year student of Technology Application Development (Desarrollo de Aplicaciones Tecnológicas).</p></div>
+        <div class="card"><span class="tag" data-i18n="about.bg">Background</span>
+          <h3 data-i18n="about.bg.h">Financial administration</h3>
+          <p data-i18n="about.bg.p">Prior academic training in financial administration — which is why I care about correctness, risk and auditability in software.</p></div>
+        <div class="card"><span class="tag" data-i18n="about.focus">Focus</span>
+          <h3 data-i18n="about.focus.h">AI developer tooling</h3>
+          <p data-i18n="about.focus.p">Small, sourced, tested libraries. Every claim links to a source; every metric on this site is fetched live.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="reveal">
+    <div class="wrap">
+      <div class="eyebrow" data-i18n="projects.eyebrow">Projects</div>
+      <h2 data-i18n="projects.title">Projects hub</h2>
+      <p class="sub" data-i18n="projects.sub">QuantumImpactTech is an open-source initiative, not a company. Each project ships with tests, a security policy and a public roadmap.</p>
+      <div class="card feature">
+        <div>
+          <span class="tag live" data-i18n="projects.flag">Flagship · v0.1.0</span>
+          <h3 style="font-size:28px">schema-caniuse</h3>
+          <p data-i18n="projects.sc.p">Can I use this JSON Schema with OpenAI, Claude or Gemini? Every provider accepts a different subset of JSON Schema, and every framework keeps its own outdated list. schema-caniuse is one shared, sourced, versioned dataset plus a zero-dependency checker and CLI.</p>
+          <p class="links">
+            <a href="https://github.com/Ovaldino05/QuantumImpactTech/tree/main/packages/schema-caniuse" data-i18n="projects.src">Source</a>
+            <a href="https://github.com/Ovaldino05/QuantumImpactTech/tree/main/packages/schema-caniuse#readme" data-i18n="projects.docs">Docs</a>
+            <a href="#playground" data-i18n="projects.demo">Live demo</a>
+            <a href="https://github.com/Ovaldino05/QuantumImpactTech/issues?q=is%3Aopen+label%3A%22good+first+issue%22" data-i18n="projects.contrib">Contribute</a>
+          </p>
+          <p class="note" id="npm-note" data-i18n="projects.npm">npm package: publication pending.</p>
+        </div>
+        <pre><code>$ npx schema-caniuse tools.json
+
+<span class="sev-error">✖ openai-strict</span>
+  <span class="path">/properties/x/allOf</span>  "allOf" is not supported
+<span class="sev-warning">⚠ gemini</span>
+  <span class="path">/properties/name/minLength</span>  accepted but not enforced
+<span class="ok">✔ anthropic-strict</span></code></pre>
+      </div>
+      <div class="grid" style="margin-top:18px">
+        <div class="card"><span class="tag" data-i18n="projects.research">Research</span>
+          <h3>sfep-pa</h3>
+          <p data-i18n="projects.sfep.p">Open SDK for Panama's e-invoicing system (SFEP, DGI). Code starts only after the official technical specification has been studied and summarized.</p>
+          <p class="links"><a href="https://github.com/Ovaldino05/QuantumImpactTech/issues/9" data-i18n="projects.track">Track progress</a></p></div>
+        <div class="card"><span class="tag" data-i18n="projects.devhub">Developer hub</span>
+          <h3 data-i18n="projects.devhub.h">Contribute in 10 minutes</h3>
+          <p data-i18n="projects.devhub.p">Fix one provider fact: edit a JSON file, cite the official docs, add a test. That's a real, mergeable open-source contribution.</p>
+          <p class="links"><a href="https://github.com/Ovaldino05/QuantumImpactTech/blob/main/CONTRIBUTING.md" data-i18n="projects.guide">Contributing guide</a></p></div>
+        <div class="card"><span class="tag" data-i18n="projects.sec">Security</span>
+          <h3 data-i18n="projects.sec.h">Secure by default</h3>
+          <p data-i18n="projects.sec.p">OpenSSF Scorecard, Dependabot, private vulnerability reporting and token-free npm publishing through OIDC.</p>
+          <p class="links"><a href="https://github.com/Ovaldino05/QuantumImpactTech/blob/main/SECURITY.md" data-i18n="projects.policy">Security policy</a></p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="playground" class="reveal">
+    <div class="wrap">
+      <div class="eyebrow" data-i18n="play.eyebrow">Interactive</div>
+      <h2 data-i18n="play.title">schema-caniuse playground</h2>
+      <p class="sub" data-i18n="play.sub">Paste a JSON Schema or a list of tools (MCP, OpenAI or Anthropic format). It runs the real library in your browser — nothing is uploaded.</p>
+      <div class="play">
+        <div>
+          <label for="schema" class="label" data-i18n="play.input">Your schema</label>
+          <textarea id="schema" spellcheck="false"></textarea>
+          <div class="targets" id="targets" role="group" aria-label="Targets"></div>
+          <button class="btn primary" id="run" type="button" data-i18n="play.run">Check compatibility</button>
+        </div>
+        <div>
+          <span class="label" data-i18n="play.output">Results</span>
+          <div class="results" id="results" aria-live="polite"></div>
+          <p class="note" id="dataver"></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="impact" class="reveal">
+    <div class="wrap">
+      <div class="eyebrow" data-i18n="impact.eyebrow">Impact panel</div>
+      <h2 data-i18n="impact.title">Real numbers, fetched live</h2>
+      <p class="sub" data-i18n="impact.sub">Pulled from the public GitHub and npm APIs when you open this page. Nothing here is estimated.</p>
+      <div class="grid" id="stats"></div>
+      <h3 style="margin-top:40px" data-i18n="impact.goals">12-month goals</h3>
+      <p class="note" data-i18n="impact.goals.note">Targets, not results. A goal is only marked complete with public evidence.</p>
+      <div class="card" style="overflow:auto"><table id="goals"></table></div>
+    </div>
+  </section>
+
+  <section id="roadmap" class="reveal">
+    <div class="wrap">
+      <div class="eyebrow" data-i18n="roadmap.eyebrow">Public roadmap</div>
+      <h2 data-i18n="roadmap.title">What's next</h2>
+      <p class="sub" data-i18n="roadmap.sub">Loaded live from GitHub milestones and issues.</p>
+      <div class="grid" id="milestones"></div>
+      <p class="note"><a href="https://github.com/Ovaldino05/QuantumImpactTech/blob/main/ROADMAP.md" data-i18n="roadmap.full">Full roadmap →</a></p>
+    </div>
+  </section>
+
+  <section id="contributions" class="reveal">
+    <div class="wrap">
+      <div class="eyebrow" data-i18n="contrib.eyebrow">Open source</div>
+      <h2 data-i18n="contrib.title">Contributions</h2>
+      <p class="sub" data-i18n="contrib.sub">Pull requests merged into projects I don't own. This list starts empty and grows only with real, reviewed work.</p>
+      <div class="card" id="external"></div>
+    </div>
+  </section>
+
+  <section id="blog" class="reveal">
+    <div class="wrap">
+      <div class="eyebrow" data-i18n="blog.eyebrow">Blog</div>
+      <h2 data-i18n="blog.title">Writing</h2>
+      <div class="grid">
+        <a class="card" href="blog/why-schema-caniuse.html" style="text-decoration:none">
+          <span class="tag">2026-11-27</span>
+          <h3 data-i18n="blog.p1.h">Your tool schema works in Claude. Will it work in Gemini?</h3>
+          <p data-i18n="blog.p1.p">Why LLM JSON Schema compatibility needs a shared, sourced database instead of a hundred hand-written lists.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="reveal">
+    <div class="wrap">
+      <div class="eyebrow" data-i18n="contact.eyebrow">Contact</div>
+      <h2 data-i18n="contact.title">Let's build together</h2>
+      <p class="sub" data-i18n="contact.sub">The best way to reach me is through GitHub: open an issue, propose a data fix or say hello.</p>
+      <div class="cta">
+        <a class="btn primary" href="https://github.com/Ovaldino05/QuantumImpactTech/issues/new/choose" data-i18n="contact.issue">Open an issue</a>
+        <a class="btn" href="https://github.com/Ovaldino05">github.com/Ovaldino05</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p data-i18n="footer">© 2026 Ovaldino Palacio · QuantumImpactTech is an open-source initiative, not a registered company. Code under MIT. Parts of this site and its projects were written with AI assistance and reviewed by the author.</p>
+  </div>
+</footer>
+
+<script type="module" src="app.js"></script>
+</body>
+</html>

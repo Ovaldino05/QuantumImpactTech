@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256" role="img" aria-labelledby="t">
+  <title id="t">schema-caniuse</title>
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#3B82F6"/>
+      <stop offset="1" stop-color="#8B5CF6"/>
+    </linearGradient>
+  </defs>
+  <rect width="256" height="256" rx="56" fill="#0B0D12"/>
+  <!-- braces -->
+  <path d="M92 52 C64 52 66 74 66 96 C66 112 58 122 44 128 C58 134 66 144 66 160 C66 182 64 204 92 204"
+        fill="none" stroke="url(#g)" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M164 52 C192 52 190 74 190 96 C190 112 198 122 212 128 C198 134 190 144 190 160 C190 182 192 204 164 204"
+        fill="none" stroke="url(#g)" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- check -->
+  <path d="M98 130 L120 152 L160 106" fill="none" stroke="#FFFFFF" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

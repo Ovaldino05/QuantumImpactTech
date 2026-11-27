@@ -10,6 +10,10 @@ Las fechas son horizontes de trabajo, no garantías de adopción.
 - [ ] Crear repo `Ovaldino05/Ovaldino05` y publicar el README de perfil (`perfil/README.md`). *(requiere acción del dueño)*
 - [x] Proyecto insignia global `schema-caniuse` 0.1.0: datos con fuentes, verificador, CLI, 16 pruebas, CI (Node 18/20/22).
 - [x] Workflow de publicación en npm con OIDC (sin tokens).
+- [x] Identidad visual (logos, banners animados SVG, tarjetas) generada en el repo.
+- [x] Sitio web con playground, panel de impacto en vivo, hoja de ruta y blog (`site/`).
+- [x] Plantilla de perfil con estadísticas propias (sin servicios de terceros), snake y gráfico 3D.
+- [ ] Activar GitHub Pages. *(requiere acción del dueño)*
 - [ ] Primera publicación en npm. *(requiere cuenta npm del dueño)*
 
 ## 7 días
