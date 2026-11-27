@@ -1,0 +1,36 @@
+name: Release schema-caniuse
+
+# Publishes to npm with provenance via OIDC (npm Trusted Publishing).
+# No npm token is stored in this repository.
+on:
+  push:
+    tags: ['schema-caniuse-v*']
+
+permissions:
+  contents: read
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    environment: npm
+    permissions:
+      contents: read
+      id-token: write
+    defaults:
+      run:
+        working-directory: packages/schema-caniuse
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          registry-url: https://registry.npmjs.org
+      - run: npm install -g npm@latest
+      - run: npm test
+      - name: Tag matches package version
+        run: |
+          v="schema-caniuse-v$(node -p "require('./package.json').version")"
+          test "$v" = "${GITHUB_REF_NAME}" || { echo "Tag ${GITHUB_REF_NAME} != $v"; exit 1; }
+      - run: npm publish --provenance --access public

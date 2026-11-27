@@ -3,13 +3,14 @@
 **ES** · Centro de coordinación del ecosistema open source de [@Ovaldino05](https://github.com/Ovaldino05): hoja de ruta, matriz de cumplimiento verificable y políticas comunes.
 **EN** · Coordination hub for [@Ovaldino05](https://github.com/Ovaldino05)'s open source work: roadmap, verifiable compliance matrix and shared policies.
 
-## Proyecto insignia / Flagship (en preparación)
+## Proyectos / Projects
 
-**`sfep-pa`** — SDK de código abierto para el Sistema de Factura Electrónica de Panamá (SFEP, DGI): construcción y validación del XML según la Ficha Técnica, cálculo de CUFE y dígito verificador del RUC.
+| Proyecto | Qué resuelve | Estado |
+|---|---|---|
+| [**schema-caniuse**](packages/schema-caniuse) | ¿Este JSON Schema funciona con OpenAI, Claude o Gemini? Base de datos de compatibilidad con fuentes + verificador y CLI. / *Can I use this JSON Schema with OpenAI, Claude or Gemini?* | `0.1.0` funcional, 16 pruebas; sin publicar en npm |
+| **sfep-pa** | SDK abierto para la Factura Electrónica de Panamá (SFEP, DGI): XML, CUFE, dígito verificador del RUC. | Diseño — se implementa solo tras estudiar la Ficha Técnica oficial |
 
-Por qué: la factura electrónica en Panamá se emite en XML según la Ficha Técnica de la DGI, y hoy las integraciones disponibles son mayormente módulos comerciales cerrados. No existe una biblioteca abierta, probada y documentada que cualquier desarrollador pueda integrar.
-
-Estado: **diseño**. Aún no hay código publicado. Ver [ROADMAP.md](ROADMAP.md).
+Ver [ROADMAP.md](ROADMAP.md).
 
 ## Seguimiento
 
