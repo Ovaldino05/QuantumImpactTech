@@ -1,0 +1,144 @@
+{
+  "version": "2026-11-26",
+  "statusLegend": {
+    "supported": "Documented as supported and enforced.",
+    "ignored": "Accepted but not enforced (silently dropped or not applied).",
+    "stripped": "Removed client-side by the official SDK before sending; enforce yourself.",
+    "unsupported": "Documented as not supported.",
+    "unknown": "Not documented by the provider; verify before relying on it."
+  },
+  "targets": {
+    "openai-strict": {
+      "name": "OpenAI Structured Outputs / strict function calling",
+      "provider": "openai",
+      "onUnsupported": "error",
+      "verified": "2026-11-26",
+      "sources": [
+        "https://developers.openai.com/api/docs/guides/structured-outputs"
+      ],
+      "rules": {
+        "rootMustBeObject": true,
+        "rootAnyOfForbidden": true,
+        "additionalPropertiesMustBeFalse": true,
+        "allPropertiesRequired": true
+      },
+      "limits": {
+        "maxObjectProperties": 5000,
+        "maxNestingDepth": 10,
+        "maxEnumValues": 1000
+      },
+      "formats": ["date-time", "time", "date", "duration", "email", "hostname", "ipv4", "ipv6", "uuid"],
+      "keywords": {
+        "type": "supported",
+        "properties": "supported",
+        "required": "supported",
+        "additionalProperties": "supported",
+        "items": "supported",
+        "enum": "supported",
+        "const": "supported",
+        "anyOf": "supported",
+        "$ref": "supported",
+        "$defs": "supported",
+        "definitions": "unknown",
+        "pattern": "supported",
+        "format": "supported",
+        "multipleOf": "supported",
+        "minimum": "supported",
+        "maximum": "supported",
+        "exclusiveMinimum": "supported",
+        "exclusiveMaximum": "supported",
+        "minItems": "supported",
+        "maxItems": "supported",
+        "allOf": "unsupported",
+        "not": "unsupported",
+        "if": "unsupported",
+        "then": "unsupported",
+        "else": "unsupported",
+        "dependentRequired": "unsupported",
+        "dependentSchemas": "unsupported",
+        "oneOf": "unknown",
+        "minLength": "unknown",
+        "maxLength": "unknown",
+        "prefixItems": "unknown",
+        "uniqueItems": "unknown",
+        "contains": "unknown",
+        "patternProperties": "unknown",
+        "propertyNames": "unknown",
+        "minProperties": "unknown",
+        "maxProperties": "unknown",
+        "default": "unknown"
+      }
+    },
+    "anthropic-strict": {
+      "name": "Anthropic Claude strict tools / structured outputs",
+      "provider": "anthropic",
+      "onUnsupported": "strip",
+      "verified": "2026-11-26",
+      "sources": [
+        "https://platform.claude.com/docs/en/build-with-claude/structured-outputs"
+      ],
+      "rules": {
+        "additionalPropertiesMustBeFalse": true
+      },
+      "limits": {
+        "maxStrictToolsPerRequest": 20,
+        "maxOptionalParametersPerRequest": 24,
+        "maxUnionParametersPerRequest": 16
+      },
+      "keywords": {
+        "type": "supported",
+        "properties": "supported",
+        "required": "supported",
+        "additionalProperties": "supported",
+        "items": "supported",
+        "enum": "supported",
+        "const": "supported",
+        "anyOf": "supported",
+        "pattern": "supported",
+        "format": "supported",
+        "minimum": "stripped",
+        "maximum": "stripped",
+        "minLength": "stripped",
+        "maxLength": "stripped"
+      }
+    },
+    "gemini": {
+      "name": "Google Gemini structured output",
+      "provider": "google",
+      "onUnsupported": "ignore",
+      "verified": "2026-11-26",
+      "sources": [
+        "https://aistudio.google.com/docs/structured-output"
+      ],
+      "rules": {},
+      "limits": {},
+      "formats": ["date-time", "date", "time"],
+      "keywords": {
+        "type": "supported",
+        "title": "supported",
+        "properties": "supported",
+        "required": "supported",
+        "additionalProperties": "supported",
+        "enum": "supported",
+        "format": "supported",
+        "minimum": "supported",
+        "maximum": "supported",
+        "items": "supported",
+        "prefixItems": "supported",
+        "minItems": "supported",
+        "maxItems": "supported",
+        "anyOf": "supported",
+        "$ref": "supported",
+        "$defs": "supported",
+        "minLength": "ignored",
+        "maxLength": "ignored",
+        "minProperties": "ignored",
+        "maxProperties": "ignored",
+        "uniqueItems": "ignored",
+        "contains": "ignored",
+        "minContains": "ignored",
+        "maxContains": "ignored"
+      }
+    }
+  }
+}
