@@ -48,3 +48,8 @@ export function checkTools(
   tools: object[],
   targetId: string
 ): { target: string; ok: boolean; issues: Issue[]; tools: (CheckResult & { tool: string })[] };
+
+export function createApi(data: { version: string; targets: Record<string, Target> }): {
+  version: string; targets: Record<string, Target>; listTargets: typeof listTargets; support: typeof support;
+  check: typeof check; checkAll: typeof checkAll; checkTools: typeof checkTools;
+};

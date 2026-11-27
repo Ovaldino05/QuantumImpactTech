@@ -8,6 +8,7 @@
       "types": "./src/index.d.ts",
       "default": "./src/index.js"
     },
+    "./core": "./src/core.js",
     "./data/targets.json": "./data/targets.json"
   },
   "types": "./src/index.d.ts",

@@ -153,3 +153,11 @@ test('boolean subschemas and $defs recursion do not crash', () => {
   };
   for (const id of listTargets()) assert.doesNotThrow(() => check(schema, id));
 });
+
+test('createApi (browser-safe core) matches the Node entry', async () => {
+  const { createApi } = await import('../src/core.js');
+  const { readFileSync } = await import('node:fs');
+  const api = createApi(JSON.parse(readFileSync(new URL('../data/targets.json', import.meta.url), 'utf8')));
+  assert.deepEqual(api.listTargets(), listTargets());
+  assert.deepEqual(api.check(strictOk, 'gemini'), check(strictOk, 'gemini'));
+});

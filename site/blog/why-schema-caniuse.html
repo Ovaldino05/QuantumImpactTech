@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Your tool schema works in Claude. Will it work in Gemini? · QuantumImpactTech</title>
+  <meta name="description" content="Why LLM JSON Schema compatibility needs a shared, sourced database instead of a hundred hand-written lists.">
+  <link rel="canonical" href="https://ovaldino05.github.io/QuantumImpactTech/blog/why-schema-caniuse.html">
+  <link rel="icon" href="../brand/qit-logo.svg" type="image/svg+xml">
+  <meta property="og:title" content="Your tool schema works in Claude. Will it work in Gemini?">
+  <meta property="og:image" content="https://ovaldino05.github.io/QuantumImpactTech/brand/og.png">
+  <link rel="stylesheet" href="../styles.css">
+  <script>try{var t=localStorage.getItem('theme')||(matchMedia('(prefers-color-scheme: light)').matches?'light':'dark');document.documentElement.dataset.theme=t}catch(e){}</script>
+  <style>article{max-width:720px;margin:0 auto;padding:70px 24px}article h1{font-size:clamp(32px,5vw,48px);letter-spacing:-1px}article p,article li{color:var(--muted);font-size:17px}article h2{font-size:24px;margin-top:40px}</style>
+</head>
+<body>
+<header><div class="wrap bar"><a class="brand" href="../"><img src="../brand/qit-logo.svg" alt="" width="30" height="30">QuantumImpactTech</a></div></header>
+<main><article>
+  <p class="eyebrow">2026-11-27 · Ovaldino Palacio</p>
+  <h1>Your tool schema works in Claude. Will it work in Gemini?</h1>
+  <p>Structured outputs and tool calling look like a solved problem: you hand the model a JSON Schema and you get JSON back. In practice every provider accepts a different subset of JSON Schema, and they disagree on what to do with the rest.</p>
+  <h2>Three providers, three behaviors</h2>
+  <ul>
+    <li><b>OpenAI strict mode</b> rejects the request when the schema uses something it does not support, such as <code>allOf</code>. It also requires <code>additionalProperties: false</code> and every property listed in <code>required</code>.</li>
+    <li><b>Gemini</b> accepts some keywords, like <code>minLength</code>, but does not enforce them. Nothing fails; your constraint just disappears.</li>
+    <li><b>Claude's SDK</b> removes constraints such as <code>maximum</code> before sending and moves them into the description, and the API caps optional parameters per request.</li>
+  </ul>
+  <p>The same schema can therefore fail loudly, fail silently, or be rewritten, depending on where it runs.</p>
+  <h2>Everyone keeps their own list</h2>
+  <p>Agent frameworks and SDKs work around this by shipping their own hand-written lists of "unsupported keywords" per provider. Each list is maintained separately, verified at a different date, and some of the public comparisons already contradict the providers' own documentation.</p>
+  <h2>A shared, sourced database</h2>
+  <p><a href="https://github.com/Ovaldino05/QuantumImpactTech/tree/main/packages/schema-caniuse">schema-caniuse</a> takes the approach that worked for browsers with caniuse: one shared dataset that everyone can depend on and fix.</p>
+  <ul>
+    <li>Every fact cites the provider's official documentation and a verification date.</li>
+    <li>Anything undocumented is marked <code>unknown</code> instead of guessed.</li>
+    <li>A zero-dependency checker points to the exact JSON Pointer of each problem, for plain schemas and for MCP, OpenAI and Anthropic tool lists.</li>
+  </ul>
+  <pre><code>npx schema-caniuse tools.json --target openai-strict,gemini</code></pre>
+  <h2>How you can help</h2>
+  <p>Providers change constantly, so the most valuable contribution is a data fix: edit one JSON file, cite the source, add a test. <a href="https://github.com/Ovaldino05/QuantumImpactTech/issues?q=is%3Aopen+label%3A%22good+first+issue%22">Start with a good first issue</a>, or <a href="../#playground">try the playground</a>.</p>
+  <p class="note">Written with AI assistance and reviewed by the author.</p>
+</article></main>
+</body>
+</html>
