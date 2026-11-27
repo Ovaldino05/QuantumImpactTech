@@ -1,0 +1,31 @@
+name: Corrección de datos / Compatibility data
+description: Un proveedor acepta, ignora o rechaza un keyword distinto a lo que dice schema-caniuse
+labels: ["data", "schema-caniuse"]
+body:
+  - type: input
+    id: target
+    attributes:
+      label: Target
+      placeholder: openai-strict / anthropic-strict / gemini
+    validations:
+      required: true
+  - type: input
+    id: keyword
+    attributes:
+      label: Keyword
+      placeholder: minLength
+    validations:
+      required: true
+  - type: dropdown
+    id: status
+    attributes:
+      label: Estado real / Actual status
+      options: [supported, ignored, stripped, unsupported]
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Fuente oficial o reproducción / Official source or repro
+    validations:
+      required: true

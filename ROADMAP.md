@@ -8,15 +8,21 @@ Las fechas son horizontes de trabajo, no garantías de adopción.
 - [x] OpenSSF Scorecard + Dependabot en este repo.
 - [x] Matriz de cumplimiento con valores reales.
 - [ ] Crear repo `Ovaldino05/Ovaldino05` y publicar el README de perfil (`perfil/README.md`). *(requiere acción del dueño)*
-- [ ] Crear repo `sfep-pa`. *(requiere acción del dueño)*
+- [x] Proyecto insignia global `schema-caniuse` 0.1.0: datos con fuentes, verificador, CLI, 16 pruebas, CI (Node 18/20/22).
+- [x] Workflow de publicación en npm con OIDC (sin tokens).
+- [ ] Primera publicación en npm. *(requiere cuenta npm del dueño)*
 
 ## 7 días
+- [ ] `schema-caniuse`: verificación en vivo contra las APIs (Gemini tiene nivel gratuito) y matriz pública en GitHub Pages.
+- [ ] Agregar destinos: Mistral, AWS Bedrock, Ollama/vLLM.
 - [ ] Descargar y estudiar la Ficha Técnica vigente de la DGI; resumirla en `sfep-pa/docs/ficha-tecnica.md`.
 - [ ] Implementar dígito verificador (DV) del RUC con pruebas contra el validador oficial de la DGI.
 - [ ] Revisar como panameño el PR abierto de RUC en `python-stdnum` (arthurdejong/python-stdnum#348) y aportar datos de formato reales.
 - [ ] Crear cuentas en PyPI y npm con 2FA.
 
 ## 30 días
+- [ ] `schema-caniuse` para Python (PyPI) leyendo el mismo `targets.json`.
+- [ ] Función `fix()` que transforme el esquema para cada proveedor.
 - [ ] `sfep-pa` v0.1.0 en PyPI con publicación confiable (OIDC): modelos de datos, generación de XML, validación contra XSD, CUFE.
 - [ ] Documentación bilingüe + ejemplos.
 - [ ] 10 issues `good first issue` reales.

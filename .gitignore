@@ -427,3 +427,7 @@ FodyWeavers.xsd
 *.msix
 *.msm
 *.msp
+
+# Monorepo: our own packages are source, not NuGet output
+!/packages/*
+!/packages/*/bin/*

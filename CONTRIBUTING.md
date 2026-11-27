@@ -10,3 +10,11 @@
 
 Issues con la etiqueta `good first issue` están pensados para personas nuevas.
 Todos los participantes deben respetar el [Código de Conducta](CODE_OF_CONDUCT.md).
+
+## schema-caniuse: corregir o agregar datos / fixing compatibility data
+
+1. Edita `packages/schema-caniuse/data/targets.json`.
+2. Cita la documentación **oficial** del proveedor en `sources` y actualiza `verified` (AAAA-MM-DD).
+3. Si un dato no está documentado, usa `unknown`. No adivines.
+4. Agrega o ajusta una prueba en `packages/schema-caniuse/test/`.
+5. `cd packages/schema-caniuse && npm test`

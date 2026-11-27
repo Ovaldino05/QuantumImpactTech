@@ -1,0 +1,38 @@
+{
+  "name": "schema-caniuse",
+  "version": "0.1.0",
+  "description": "Can I use this JSON Schema with OpenAI, Claude or Gemini? A sourced compatibility database and checker for LLM structured outputs and tool calling.",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./src/index.d.ts",
+      "default": "./src/index.js"
+    },
+    "./data/targets.json": "./data/targets.json"
+  },
+  "types": "./src/index.d.ts",
+  "bin": {
+    "schema-caniuse": "./bin/cli.js"
+  },
+  "files": ["src", "bin", "data", "README.md", "README.es.md"],
+  "scripts": {
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": ["json-schema", "llm", "structured-outputs", "function-calling", "tool-calling", "mcp", "openai", "anthropic", "claude", "gemini", "compatibility", "caniuse"],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ovaldino05/QuantumImpactTech.git",
+    "directory": "packages/schema-caniuse"
+  },
+  "bugs": "https://github.com/Ovaldino05/QuantumImpactTech/issues",
+  "homepage": "https://github.com/Ovaldino05/QuantumImpactTech/tree/main/packages/schema-caniuse#readme",
+  "license": "MIT",
+  "author": "Ovaldino Palacio (https://github.com/Ovaldino05)",
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  }
+}
